@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e14a2aaf26.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        html,
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+      </style>
+
+</head>
+
+<body>
+    <!-- nav section  -->
+
+    <div class="sticky top-0 container mx-auto my-4 z-10 xl:px-0 px-2 ">
+        <div class="Main-Nav-div flex justify-between items-center  bg-[#FFFFFF] ">
+            <div class="logo  ">
+
+                <img class="lg:hidden h-10 w-24" src="/studio12 logo.png" alt="">
+                <img class="hidden lg:block " src="/studio12 logo.png" alt="">
+            </div>
+            <div class="hidden lg:block ">
+                <div class="flex gap-[30px] text-stone-900 text-base font-medium  ">
+                    <a class="hover:text-[#4C8488]" href="#">Man</a>
+                    <a class="hover:text-[#4C8488]" href="#">Woman</a>
+                    <a class="hover:text-[#4C8488]" href="#">Bulk Order</a>
+                </div>
+            </div>
+
+            <div class="icons flex items-center gap-[20px] lg:gap[30px]   ">
+
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+
+                <div class="lg:hidden">
+                    <div id="mySidepanel" class="sidepanel ">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a class="hover:text-[#4C8488]" href="#">Man</a>
+                        <a class="hover:text-[#4C8488]" href="#">Woman</a>
+                        <a class="hover:text-[#4C8488]" href="#">Bulk Order</a>
+
+                    </div>
+
+
+                    <button class="openbtn " onclick="openNav()">☰ </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- hero section  -->
+    <section class="bg-zinc-100">
+        <div class=" lg:flex justify-between  container mx-auto px-2 ">
+            <div class="flex justify-center items-center ">
+                <div class="lg:text-left text-center mt-6 lg:mt-0">
+                    <div class="text-slate-500 text-base font-normal">Want to know what's hot?</div>
+                    <div class="text-slate-950 text-3xl font-bold lg:text-[48px] ">Spring Look book</div>
+                    <div class="mt-[50px]">
+                        <button
+                            class="px-8 py-4 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium">Start
+                            Shopping</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lg:mt-[100px]">
+                <img class="" src="/Hero image (4).png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- man women section  -->
+    <section class="container mx-auto px-2 lg:mt-[50px]">
+        <div class=" gap-10 lg:flex justify-between ">
+            <div class="bg-zinc-100 my-10 rounded-2xl lg:my-0  ">
+                <div class="flex justify-between px-[35px]">
+                    <div class="flex justify-center items-end">
+                        <div class="">
+                            <div class="text-slate-950 text-3xl font-normal leading-9">Shop<br />Man’s Fashion</div>
+                            <button
+                                class="my-6 px-6 py-2 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium lg:px-6 lg:py-2">View
+                                Product</button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <img src="/image 16.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F9F0F0] rounded-2xl ">
+                <div class="flex justify-between px-[35px]">
+                    <div class="flex justify-center items-end">
+                        <div class="">
+                            <div class="text-slate-950 text-3xl font-normal leading-9">Shop<br />Man’s Fashion</div>
+                            <button
+                                class="my-6 px-6 py-2 rounded-3xl border border-red-400 text-center text-red-400 text-base font-medium lg:text-lg  lg:px-8 lg:py-4">View
+                                Product</button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <img src="/Female.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart section  -->
+    <section class="container mx-auto px-2 lg:mt-[50px]">
+        <div class="flex justify-between items-center">
+            <div class="text-center text-black text-2xl font-semibold lg:text-2xl">Latest Releases
+            </div>
+            <div>
+                <button
+                    class="my-6 px-8 py-4 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium">View
+                    Product</button>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 lg:grid-cols-4">
+
+            <div class="shadow-md rounded-xl">
+                <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px ">
+
+                    <div
+                        class=" bg-gray-200 border border-lime-200 img h-[200px] overflow-hidden transition-all relative lg:h-[400px]">
+
+                        <div class=" icons lg:block text-center gap-2 absolute -top-44">
+                            <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                    class="fa-regular fa-eye"></i></button>
+                            <button class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                    class="fa-regular fa-heart"></i></button>
+                            <button class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+
+                        </div>
+
+                    </div>
+                    <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                        <button
+                            class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                    <div class="flex justify-between items-center px-[10px]">
+
+                        <div class="text-[10px] lg:text-xl">
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+
+                        </div>
+                        <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                class="text-neutral-400 text-lg font-normal">$55</del></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="shadow-md rounded-xl">
+                <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px ">
+
+                    <div class=" bg-gray-200 img h-[200px] overflow-hidden transition-all relative lg:h-[400px]">
+                        <div class="">
+                            <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-eye"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                        <button
+                            class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                    <div class="flex justify-between items-center px-[10px]">
+
+                        <div class="text-[10px] lg:text-xl">
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+
+                        </div>
+                        <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                class="text-neutral-400 text-lg font-normal">$55</del></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="shadow-md rounded-xl">
+                <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px ">
+
+                    <div class=" bg-gray-200 img h-[200px] overflow-hidden transition-all relative lg:h-[400px]">
+                        <div class="">
+                            <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-eye"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                        <button
+                            class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                    <div class="flex justify-between items-center px-[10px]">
+
+                        <div class="text-[10px] lg:text-xl">
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+
+                        </div>
+                        <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                class="text-neutral-400 text-lg font-normal">$55</del></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="shadow-md rounded-xl">
+                <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px ">
+
+                    <div class=" bg-gray-200 img h-[200px] overflow-hidden transition-all relative lg:h-[400px]">
+                        <div class="">
+                            <div class="icons lg:block text-center gap-2 absolute -top-44">
+                                <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-eye"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-regular fa-heart"></i></button>
+                                <button
+                                    class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                        class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                        <button
+                            class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                    <div class="flex justify-between items-center px-[10px]">
+
+                        <div class="text-[10px] lg:text-xl">
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                            <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+
+                        </div>
+                        <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                class="text-neutral-400 text-lg font-normal">$55</del></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- signature items section  -->\
+    <section class="container mx-auto px-2 lg:mt-[50px]">
+        <div class="lg:flex justify-between gap-10">
+            <div class="bg-zinc-100 my-10 rounded-2xl lg:my-0  ">
+                <div class="flex justify-between px-[35px]">
+                    <div class="flex justify-center items-end">
+                        <div class="">
+                            <div class="text-slate-950 text-xl font-semibold leading-9 lg:text-3xl">Signature Item</div>
+                            <button
+                                class="my-6 px-6 py-2 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium lg:px-6 lg:py-2">Discover
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <img src="/sleveless girl.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-zinc-100 my-10 rounded-2xl lg:my-0  ">
+                <div class="flex justify-between px-[35px]">
+                    <div class="flex justify-center items-end">
+                        <div class="">
+                            <div class="text-slate-950 text-xl font-semibold leading-9 lg:text-3xl">Signature Item</div>
+                            <button
+                                class="my-6 px-6 py-2 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium lg:px-6 lg:py-2">Discover
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <img src="/sleveless girl.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-zinc-100 my-10 rounded-2xl lg:my-0  ">
+                <div class="flex justify-between px-[35px]">
+                    <div class="flex justify-center items-end">
+                        <div class="">
+                            <div class="text-slate-950 text-xl font-semibold leading-9 lg:text-3xl">Signature Item</div>
+                            <button
+                                class="my-6 px-6 py-2 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium lg:px-6 lg:py-2">Discover
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <img src="/sleveless girl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- detail more section  -->
+    <section class="container mx-auto px-2 lg:mt-[50px]">
+        <div>
+            <div class="text-black text-3xl font-bold">Details More</div>
+
+            <div class="flex justify-between items-center ">
+                <div class="flex gap-5 border-b-4 lg:gap-10 ">
+                    <div
+                        class="text-center text-black text-4 font-semibold lg:text-2xl  hover:border-b-4 border-slate-800 py-10">
+                        Shirt
+                    </div>
+                    <div
+                        class="text-center text-black text-4 font-semibold lg:text-2xl hover:border-b-4 border-slate-800 py-10">
+                        Pant
+                    </div>
+                    <div
+                        class="text-center text-black text-4 font-semibold lg:text-2xl hover:border-b-4 border-slate-800 py-10">
+                        Shoe
+                    </div>
+                    <div
+                        class="text-center text-black text-4 font-semibold lg:text-2xl hover:border-b-4 border-slate-800 py-10">
+                        Bag
+                    </div>
+                </div>
+                <div>
+                    <button
+                        class="my-6 px-8 py-4 rounded-3xl border border-slate-500 text-center text-slate-500 text-base lg:text-lg font-medium">View
+                        All</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex justify-between gap-2 ">
+            <div class="flex justify-center"><img class=" " src="/blond guy.png" alt=""></div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-4 lg:mt-0 ">
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="shadow-md rounded-xl ">
+                    <div class=" bg-[#F1F1F1] rounded-[20px]  b-10px  ">
+    
+                        <div class=" bg-gray-200 img  overflow-hidden transition-all relative  ">
+                            <div class="flex justify-center"><img src="/image 21.png" alt=""></div>
+                            <div class="">
+                                <div class="icons lg:block text-center gap-2 absolute -top-44 ">
+                                    <button class=" block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-eye"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button
+                                        class="my-2 block rounded-xl bg-[#4C8488] hover:bg-[#fff] px-[12px] py-[6px] lg:px-[18px] lg:py-[12px] "><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="lg:hidden text-center gap-2 absolute inset-x-0 bottom-8 ">
+                            <button
+                                class="px-[14px] py-[8px] bg-[rgba(196, 229, 156, 1)] rounded-full border border-lime-200"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h1 class="text-center text-slate-950 text-base font-normal">Men’s Blue Cotton T-shirt</h1>
+                        <div class="flex justify-between items-center px-[10px]">
+    
+                            <div class="text-[10px] lg:text-xl">
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+                                <i class="fa-regular fa-star" style="color:#FF983A;"></i>
+    
+                            </div>
+                            <p class=" lg:text-2xl text-sm font-semibold">$49 <del
+                                    class="text-neutral-400 text-lg font-normal">$55</del></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Active by Studio12 section -->
+    <section class="container mx-auto px-2 lg:mt-[50px] mt-5">
+        <div class="lg:flex justify-between gap-2">
+            <div class="lg:w-1/2 flex justify-center items-center">
+                <div>
+                    <div class="text-center text-black text-3xl font-bold lg:text-start">Active by Studio12</div>
+                <div class="text-black text-lg lg:text-start text-justify font-semibold">S12: Active is a cutting-edge activewear brand that combines innovative design with functionality, making it the perfect choice for the modern, active individual. Its high-quality fabrics and attention to detail ensure a comfortable and supportive fit, while its sleek and stylish designs make it suitable for any occasion. Whether you're hitting the gym, going for a run, or simply running errands, S12: Active provides a range of versatile activewear that will keep you looking and feeling your best. What's more, with its focus on sustainability and ethical production practices, S12: Active is not just a smart choice for your wardrobe but also for the planet. By choosing S12: Active, you're not just investing in top-quality activewear but also contributing to a better and more sustainable future.</div>
+
+                </div>
+            </div>
+            <div class="mt-5 lg:mt-0">
+                <img src="/Active by.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Order or Wholesale -->
+  <section class="container mx-auto px-2 lg:mt-[50px] mt-5">
+    <div class="lg:flex justify-between gap-2">
+        <div class="mt-5 lg:mt-0 ">
+            <img class="rounded-xl" src="/multiple image.png" alt="">
+        </div>
+        <div class="lg:w-1/2 flex justify-center items-center">
+            
+            <div class="mt-5 lg:mt-0 ">
+                <div class="text-center text-black text-3xl font-bold lg:text-start">Bulk Order or Wholesale</div>
+            <div class="text-black text-lg lg:text-start text-justify font-semibold">S12: Active is a cutting-edge activewear brand that combines innovative design with functionality, making it the perfect choice for the modern, active individual. Its high-quality fabrics and attention to detail ensure a comfortable and supportive fit, while its sleek and stylish designs make it suitable for any occasion. Whether you're hitting the gym, going for a run, or simply running errands, S12: Active provides a range of versatile activewear that will keep you looking and feeling your best. What's more, with its focus on sustainability and ethical production practices, S12: Active is not just a smart choice for your wardrobe but also for the planet. By choosing S12: Active, you're not just investing in top-quality activewear but also contributing to a better and more sustainable future.</div>
+
+            </div>
+        </div>
+        
+    </div>
+
+  </section>
+
+  <!-- Our Product Speciality -->
+  <section class="container mx-auto px-2 lg:mt-[50px] mt-5 relative">
+    <div>
+        <div class="text-center">
+            <div class="text-black text-3xl font-bold">Our Product Speciality</div>
+            <div class=" text-black text-lg font-semibold">S12: Active is a cutting-edge activewear brand that combines<br/>innovative design with functionality,</div>
+        </div>
+        <div class="lg:flex justify-between gap-5 lg:mt-4   ">
+            <div class="my-10 lg:my-0 flex justify-center"><img src="scale tap.png" alt=""></div>
+            <div class="flex justify-center">
+                <img src="blond women.png" alt="">
+            </div>
+            <div class="my-10 lg:my-0 flex justify-center"><img src="magnifying glass.png" alt=""></div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Our Customer Says section  -->
+  <section class="bg-gray-200">
+    <div class="container mx-auto px-2 lg:mt-[50px] mt-5 py-10">
+        <div class="text-center">
+            <div class="text-black text-3xl font-bold">Our Product Speciality</div>
+            <div class=" text-black text-lg font-medium mt-[10px] lg:mt-[20px]">S12: Active is a cutting-edge activewear brand that combines<br/>innovative design with functionality,</div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div>
+            <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div> <div class="swiper-slide lg:flex justify-between mt-10 ">
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class=" rounded-full bg-[#fff] hover:bg-gray-200 lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-left"></i></i></button></div>
+                <div class="bg-[#fff] text-center py-[30px] px-2 lg:px-[126px] lg:py-[47px] rounded-xl">
+                    <div class=" text-black text-base font-normal">On the rare occasion when I had a question or encountered an<br class="hidden lg:block"/>issue, the customer service team proved to be exceptional. They<br class="hidden lg:block"/>responded promptly to my inquiries and provided knowledge<br class="hidden lg:block"/>able and helpful assistance.</div>
+    
+                    <div class="py-[24px]">
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                        <i class="fa-solid fa-star" style="color: #050505;"></i>
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="/round image.png" alt="">
+                    </div>
+                    <div>
+                        <div class=" text-black text-2xl font-bold">Nabil Samad</div>
+                        <div class=" text-red-400 text-base font-normal">Founder & CEO</div>
+                    </div>
+    
+                </div>
+                <div class="flex justify-center items-center hidden lg:block"><button
+                    class="rounded-full bg-[#fff] hover:bg-[#C4E59C] lg:px-[18px] px-[16px] lg:py-[12px] py-[10px] "><i class="fa-solid fa-arrow-right"></i></i></button></div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+    <!-- footer section  -->
+    <section class="footer-section px-2 xl:px-0 lg:mt-[110px] container mx-auto my-4 xl:px-0  ">
+        <div class="flex lg:justify-between  flex-col lg:flex-row py-8">
+
+            <div class="text-justify lg:text-start">
+                <div class="flex lg:hidden justify-center lg:justify-start"><img class=" h-10 w-24"
+                        src="/studio12 logo.png" alt=""></div>
+                <div class="flex hidden  justify-center lg:justify-start lg:block"><img class=""
+                        src="/studio12 logo.png" alt=""></div>
+                <p class=" text-black text-base font-normal ">One of the standout features of this ecommerce website was
+                    <br class="hidden lg:block"> its attention to detail when it came to product descriptions <br
+                        class="hidden lg:block"> and images. Each item had a comprehensive and accurate <br
+                        class="hidden lg:block"> description, including specifications, dimensions, and <br
+                        class="hidden lg:block"> materials. The high-resolution images provided a clear
+                </p>
+            </div>
+
+
+            <div class="flex justify-center lg:justify-start ">
+                <div class="text-[#102515] lg:text-left text-center text-[16px] leading-[35px]">
+                    <p class="font-bold">UseFul Links</p>
+                    <p>About Studio 12</p>
+                    <p>Contact Us</p>
+                    <p class="">FAQ</p>
+                    <p>Terms & Conditionsv</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+
+
+            <div class="text-[#102515] lg:text-left text-center text-[16px] leading-[35px] ">
+                <p class="font-bold">Contact Info</p>
+                <p>Email</p>
+                <p>Social Link</p>
+                <div class="flex gap-[15px]  text-[20px] justify-center lg:justify-start">
+                    <img src="/bkash.png" alt="">
+                    <img src="/visa.png" alt="">
+                    <img src="/mastercard.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+        <p class="border-t-2 flex justify-center p-4">© Copyright 2022, All Rights Reserved by Studio 12</p>
+    </section>
+    <script src="/script.js">
+         var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>
